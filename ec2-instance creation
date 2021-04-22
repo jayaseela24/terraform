@@ -1,0 +1,8 @@
+provider "aws" {
+  access_key = "AKIASC3BBQ55RCPYYH7L"
+  secret_key = "bzrBiCCaoELVP4WYQ05TU+1ZrpB6byZsYcSRiVyK"
+  region     = "us-east-2"
+}
+resource "aws_instance" "example" {
+  ami           = "ami-05d72852800cbf29e"
+  instance_type = "t2.micro"
